@@ -13,16 +13,38 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      },
+      "bundleIdentifier": "com.afonsomota23feup.GoogleFitApp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.afonsomota23feup.GoogleFitApp",
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "788fb7e3-96a8-42a3-8d9a-de06d68a1ab5"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/788fb7e3-96a8-42a3-8d9a-de06d68a1ab5"
+    },
+    "scheme": "com.afonsomota23feup.GoogleFitApp",
+    "plugins": [
+      "expo-localization",
+      "@react-native-google-signin/google-signin"
+    ]
   }
 }
